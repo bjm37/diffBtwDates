@@ -28,9 +28,12 @@ namespace diffBtwDates
             Console.WriteLine("{0} - {1} = {2}", date2, date1, interval.ToString()); //print the difference
 
             //Show the difference in days, hours, and minutes.
-            Console.WriteLine("   {0,-35} {1,20}", "", interval.TotalDays + " days difference!");
-            Console.WriteLine("   {0,-35} {1,20}", "", interval.TotalHours + " hours difference!");
-            Console.WriteLine("   {0,-35} {1,20}", "", interval.TotalMinutes + " minutes difference!");
+            int days = (int)interval.TotalDays;
+            int hours = (int)interval.TotalHours;
+            int minutes = (int)interval.TotalMinutes;
+            Console.WriteLine(days + " days difference!");
+            Console.WriteLine(hours + " hours difference!");
+            Console.WriteLine(minutes + " minutes difference!");
 
         }
     }
